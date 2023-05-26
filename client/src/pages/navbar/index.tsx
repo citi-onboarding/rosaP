@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavbarContainer, Slogan, Infos, InfoN } from './styles'
-import { BackgroundImg, LogoRosa } from '../../assets';
+import Logos from '../../assets';
 
 export const NavBar: React.FC = () => {
     return ( 
         <NavbarContainer>
             <Slogan>
-                <img src={LogoRosa} alt="" />
+                <img src={Logos.RosaPnavBar} alt="" />
             </Slogan>
             <Infos>
                 <InfoN>Home</InfoN>

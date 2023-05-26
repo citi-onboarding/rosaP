@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { BackgroundImg } from "../../assets";
+import Logos from '../../assets';
 
 export const NavbarContainer = styled.div`
     width: 100%;
     height: 190px;
     display: flex;
     flex-direction: row;
-    background-image: url(${BackgroundImg});
+    background-image: url(${Logos.BackJeans});
 `
 
 export const Slogan = styled.div`
