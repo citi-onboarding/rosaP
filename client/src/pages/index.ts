@@ -1,5 +1,7 @@
-import { Home } from './home';
+import { NavBar } from './navbar';
 
 export {
-    Home
+    NavBar
 };
+
+
