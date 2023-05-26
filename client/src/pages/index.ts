@@ -1,7 +1,7 @@
-import { Home } from './home';
 import { Footer } from './footer';
+import { NavBar } from './navbar';
 
 export {
-    Home,
+    NavBar,
     Footer
 };

@@ -1,4 +1,3 @@
-import LogoCITi from './logo.png';
 import LogoInstagram from './instagram.png'
 import LogoFacebook from './facebook.png'
 import LogoLinkedin from './linkedin.png'
@@ -8,6 +7,8 @@ import LogoYoutube from './youtube.png'
 import LogoRosaP from './logorosaP.png'
 import LogoHeart from './logoHeart.png'
 import LogoCiti from './logoCITi.png'
+import BackgroundImg from './image5.png'
+import LogoRosa from './logo_rosa.png'
 
 
 const Logos = {
@@ -19,7 +20,10 @@ const Logos = {
     Instagram: LogoInstagram,
     RosaP:  LogoRosaP,
     Heart: LogoHeart,
-    Citi: LogoCiti
+    Citi: LogoCiti,
+    RosaPnavBar: LogoRosa,
+    BackJeans: BackgroundImg
+
   };
   
   export default Logos;
