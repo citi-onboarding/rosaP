@@ -9,6 +9,8 @@ import LogoHeart from './logoHeart.png'
 import LogoCiti from './logoCITi.png'
 import BackgroundImg from './image5.png'
 import LogoRosa from './logo_rosa.png'
+import QuemSomosImg from './quem somos foto.png'
+import Linha1 from './linha.png'
 
 
 const Logos = {
@@ -27,3 +29,11 @@ const Logos = {
   };
   
   export default Logos;
+
+export {
+  QuemSomosImg
+}
+
+export {
+  Linha1
+}
