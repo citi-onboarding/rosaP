@@ -13,7 +13,9 @@ import QuemSomosImg from './quem somos foto.png'
 import Linha1 from './linha.png'
 
 
-const Logos = {
+// Acho que assets se adequa melhor ao que é a variavel
+
+const Logos  = {               
     Facebook: LogoFacebook,
     Linkedin: LogoLinkedin,
     Mail: LogoMail,
@@ -24,16 +26,13 @@ const Logos = {
     Heart: LogoHeart,
     Citi: LogoCiti,
     RosaPnavBar: LogoRosa,
-    BackJeans: BackgroundImg
+    BackJeans: BackgroundImg,
+    PicWhoWeAre: QuemSomosImg,
+    Line: Linha1
+
 
   };
   
   export default Logos;
 
-export {
-  QuemSomosImg
-}
 
-export {
-  Linha1
-}
