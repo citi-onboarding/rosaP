@@ -9,11 +9,15 @@ import LogoHeart from './logoHeart.png'
 import LogoCiti from './logoCITi.png'
 import BackgroundImg from './image5.png'
 import LogoRosa from './logo_rosa.png'
+import QuemSomosImg from './quem somos foto.png'
+import Linha1 from './linha.png'
 import Elipse from './elipse.png'
 import Line from './line.png'
 
 
-const Logos = {
+// Acho que assets se adequa melhor ao que é a variavel
+
+const Logos  = {               
     Facebook: LogoFacebook,
     Linkedin: LogoLinkedin,
     Mail: LogoMail,
@@ -25,9 +29,13 @@ const Logos = {
     Citi: LogoCiti,
     RosaPnavBar: LogoRosa,
     BackJeans: BackgroundImg,
+    PicWhoWeAre: QuemSomosImg,
+    Line: Linha1,
     ElipsePic: Elipse,
     PointedLine: Line
 
   };
   
   export default Logos;
+
+
