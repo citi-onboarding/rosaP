@@ -5,6 +5,7 @@ import { GlobalStyle } from './styles/global';
 import { Footer,NavBar, WhoWeAre, Home, ContactUs } from './pages';
 
 
+
 function App() {
   return (
     <ThemeProvider theme={theme}>

@@ -1,25 +1,25 @@
 import React from "react";
-import { FooterContainer } from './styles';
+import { FooterContainer, CreditosContainer, RedesSociaisContainer, LogomarcaSpan, Line, Icons } from './styles';
 import Logos from '../../assets';
 
 export const Footer: React.FC = () => {
     return (
         <FooterContainer>
-            <span className="logomarca"><img src={Logos.RosaP} alt="" /></span>
-            <div className="Sociais">
-                <ul>
+            <LogomarcaSpan><img src={Logos.RosaP} alt="" /></LogomarcaSpan>
+            <RedesSociaisContainer>
+                <Icons>
                     <li><a href="#" target="_blank"><img src={Logos.Facebook} alt=""></img></a></li>
                     <li><a href="#" target="_blank"><img src={Logos.Instagram} alt=""></img></a></li>
                     <li><a href="#" target="_blank"><img src={Logos.Spotify} alt=""></img></a></li>
                     <li><a href="#" target="_blank"><img src={Logos.Youtube} alt=""></img></a></li>
                     <li><a href="#" target="_blank"><img src={Logos.Linkedin} alt=""></img></a></li>
                     <li><a href="#" target="_blank"><img src={Logos.Mail} alt=""></img></a></li>
-                </ul>
-            </div>
+                </Icons>
+            </RedesSociaisContainer>
 
-            <hr className="line"></hr>
+            <Line></Line>
 
-            <div className="creditos">
+            <CreditosContainer>
                 <p>Copyright Rosa P &copy; | Todos os direitos reservados </p>
                 <p>
                     Made with
@@ -28,11 +28,11 @@ export const Footer: React.FC = () => {
                     {' '}
                     and
                     {' '}
-                    <img src={Logos.Heart}></img>
+                    <img src={Logos.Heart} alt=""></img>
                     {' '}
-                    by <img src={Logos.Citi}></img>
+                    by <img src={Logos.Citi} alt=""></img>
                 </p>
-            </div>
+            </CreditosContainer>
         </FooterContainer>
     );
 }
