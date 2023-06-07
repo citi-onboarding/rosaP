@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import Logos from "../../assets";
 
 export const ContactUsContainer = styled.div`
-    height: 800px;
+    height: 840px;
     background-image: url(${Logos.BackJeans});
     display: flex;
     flex-direction: column;
+    margin-bottom:
 
 `;
 
@@ -16,6 +17,7 @@ export const InputContainer = styled.input`
     border-radius: 10px;
     border:none;
     text-indent: 20px;
+    width: 495px;
     
     ::placeholder {
         font-size: 30px;
@@ -26,22 +28,8 @@ export const InputContainer = styled.input`
 export const AddresEmail = styled.div`
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
     margin-bottom: 25px;
-
-    img {
-        border-radius: 10px;
-        background: none;
-    }
-
-    button {
-        background: none;
-        border: none;
-    }
-
-    button:active {
-        transform: scale(0.9);
-    }
+    justify-content: space-between;
 
 `;
 
@@ -57,14 +45,48 @@ export const Title = styled.div `
 
 `;
 
-export const ContentContainer = styled.textarea`
+export const ContentContainer = styled.div`
+    display:flex;
+    flex-direction: column;
+`;
 
-    cols: 33;
+export const TextContainer = styled.textarea`
     font-size: 30px;
     border-radius: 10px;
     border:none;
     width: 1030px;
-    margin-left: 250px;
     padding: 20px;
+    height: 300px;
+`;
 
+export const NodemailerContainer = styled.div`
+    display:flex;
+    flex-direction: row;
+    margin-left: 21%;
+`;
+
+export const ButtonContainer = styled.div`
+display:flex;
+justify-content: flex-start;
+margin-left: 2.5%;
+
+img {
+    display:flex;
+    border-radius: 10px;
+    background: none;
+    justify-content: flex-start;
+}
+
+button {
+    display:flex;
+    background: none;
+    border: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 93px;
+}
+
+button:active {
+    transform: scale(0.9);
+}
 `;
