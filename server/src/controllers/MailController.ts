@@ -1,7 +1,6 @@
 import { MailServer } from "src/services/MailServer";
 import dotenv from "dotenv";
 import {Request,Response} from "express";
-import { request } from "http";
 
 dotenv.config();
 
@@ -12,10 +11,10 @@ const SendMail = async (req: Request, res: Response) => {
 
         await MailServer({
             destinationUser: process.env.EMAIL_WILL_RECEIVE,
-            subjectText: 'nodemailer funcionando',
+            subjectText: 'Mensagem do site Rosa P',
             htmlOption: `<p>
 
-                o ${name} de email ${email} enviou:
+                O/a ${name} de email ${email} enviou:
                  ${message}
 
             </p>`
@@ -33,7 +32,6 @@ const SendMail = async (req: Request, res: Response) => {
 
     }
 }
-
 
 export {
     SendMail
