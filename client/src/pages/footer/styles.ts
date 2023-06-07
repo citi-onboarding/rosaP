@@ -10,43 +10,42 @@ export const FooterContainer = styled.div`
     position: relative;
     flex-direction: column;
     justify-content: space-evenly;
-    
-    .logomarca{
-        display:flex;
-        justify-content: center;
-    }
 
-    .Sociais ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        list-style: none;
-        align-content: center;
-    }
+`;
 
-    .Sociais li {
-        margin: 0 10px;
-    }
+export const CreditosContainer = styled.div`
+    display: flex;
+    flex-directions: row;
+    justify-content: space-around;
 
-    .Sociais li img{
-        
-    }
-
-    .line{
-        margin-left: 1%;
-        height: 3px;
-        background-color: #7D7E7F;
-    }
-
-    .creditos {
-        display: flex;
-        flex-directions: row;
-        justify-content: space-around;
-    }
-
-    .creditos p {
+    p {
         font-size: 20px;
         color: #827D7D;
     }
+`;
 
+export const RedesSociaisContainer = styled.div`
+
+    li {
+        margin: 0 10px;
+    }
+`;
+
+export const LogomarcaSpan = styled.span`
+    display:flex;
+    justify-content: center;
+`;
+
+export const Line = styled.hr`
+    margin-left: 1%;
+    height: 3px;
+    background-color: #7D7E7F;
+`;
+
+export const Icons = styled.ul`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-content: center;
 `;
