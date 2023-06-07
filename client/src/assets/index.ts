@@ -13,6 +13,12 @@ import QuemSomosImg from './quem somos foto.png'
 import Linha1 from './linha.png'
 import Elipse from './elipse.png'
 import Line from './line.png'
+import img_1 from './elipse_2.png'
+import img_2 from './elipse_3.png'
+import img_3 from './elipse_4.png'
+import img_4 from './elipse_5.png'
+import setaEsquerdaCinza from './seta_cinza_esquerda.png'
+import setaDireitaPreta from './seta_preta_direita.png'
 
 
 // Acho que assets se adequa melhor ao que é a variavel
@@ -32,7 +38,13 @@ const Logos  = {
     PicWhoWeAre: QuemSomosImg,
     Line: Linha1,
     ElipsePic: Elipse,
-    PointedLine: Line
+    PointedLine: Line,
+    Image1Carousel: img_1,
+    Image2Carousel: img_2,
+    Image3Carousel: img_3,
+    Image4Carousel: img_4,
+    ArrowBlackRight: setaDireitaPreta,
+    ArrowGreyLeft: setaEsquerdaCinza
 
   };
   

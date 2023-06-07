@@ -2,10 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
-import { Footer,NavBar, WhoWeAre } from './pages';
-import { Footer } from './pages';
-import { NavBar } from './pages';
-import { Home } from './pages';
+import { Footer, NavBar, Home, WhoWeAre, CarouselComponent } from './pages';
 
 
 function App() {
@@ -14,6 +11,7 @@ function App() {
       <NavBar/>
       <Home/>
       <WhoWeAre/>
+      <CarouselComponent/>
       <Footer/>
       <GlobalStyle/>
     </ThemeProvider>
