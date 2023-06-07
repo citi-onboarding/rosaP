@@ -13,6 +13,7 @@ import QuemSomosImg from './quem somos foto.png'
 import Linha1 from './linha.png'
 import Elipse from './elipse.png'
 import Line from './line.png'
+import Enviar from './enviar.png'
 
 
 // Acho que assets se adequa melhor ao que é a variavel
@@ -32,7 +33,8 @@ const Logos  = {
     PicWhoWeAre: QuemSomosImg,
     Line: Linha1,
     ElipsePic: Elipse,
-    PointedLine: Line
+    PointedLine: Line,
+    Enviar: Enviar
 
   };
   
