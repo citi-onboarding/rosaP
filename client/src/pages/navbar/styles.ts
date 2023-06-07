@@ -11,6 +11,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const Slogan = styled.div`
+    margin-left: 68px;
     img {
     
     }
@@ -23,6 +24,7 @@ export const Infos = styled.div`
     margin: 10px;
     padding-left: 270px;
     padding-top: 70px;
+    margin-right: 90px;
 
 `
 
