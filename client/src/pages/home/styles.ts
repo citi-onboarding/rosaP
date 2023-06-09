@@ -3,7 +3,7 @@ import Logos from "../../assets";
 
 export const HomeContainer = styled.div`
     width: 100%;
-    height: 800px;
+    height: 850px;
     background-image: url(${Logos.BackJeans});
     display: flex;
     flex-direction: row;
