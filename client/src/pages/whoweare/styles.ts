@@ -10,6 +10,7 @@ export const WhoWeAreContainer = styled.div`
     position: relative;
     background-repeat: no-repeat;
     height: 1300px;
+    margin-bottom: -315px;
 `;
 
 export const Content = styled.div`
