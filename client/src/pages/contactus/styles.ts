@@ -4,6 +4,9 @@ import Logos from "../../assets";
 export const ContactUsContainer = styled.div`
     height: 840px;
     background-image: url(${Logos.BackJeans});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     margin-bottom:
