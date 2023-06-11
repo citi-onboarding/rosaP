@@ -1,22 +1,27 @@
-import React from 'react';
-import { Sentence, HomeContainer, ButtonCourse, Intro, ElipseImage, Line1 } from './styles'
-import Logos from '../../assets';
+import React from 'react'
+import {
+  HomeSection,
+  TextContainer,
+  Title,
+  Button,
+  ImageContainer,
+  Image,
+} from './styles'
+import Logos from '../../assets'
+import { Link } from 'react-scroll'
 
 export const Home: React.FC = () => {
-    return ( 
-        <HomeContainer>
-            <Intro>
-                <Sentence>
-                    <Line1>Nossa maneira de</Line1>
-                    <Line1>PENSAR e FAZER moda</Line1>
-                </Sentence>
-                <ButtonCourse>
-                    ENTENDA O CURSO
-                </ButtonCourse>
-            </Intro>
-            <ElipseImage>
-                <img src={Logos.ElipsePic} alt="" />
-            </ElipseImage>
-        </HomeContainer>
-    );
-};
+  return (
+    <HomeSection id="home">
+      <TextContainer>
+        <Title>Nossa maneira de PENSAR e FAZER moda</Title>
+        <Link to="aboutthecourse" smooth={true} duration={500}>
+          <Button>ENTENDA O CURSO</Button>
+        </Link>
+      </TextContainer>
+      <ImageContainer>
+        <Image src={Logos.ElipsePic} alt="People working at a table" />
+      </ImageContainer>
+    </HomeSection>
+  )
+}

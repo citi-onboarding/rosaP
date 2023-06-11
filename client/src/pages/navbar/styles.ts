@@ -1,52 +1,43 @@
-import styled from "styled-components";
-import Logos from '../../assets';
+import styled from 'styled-components'
+import Logos from '../../assets'
 
-export const NavbarContainer = styled.div`
-    width: 100%;
-    height: 190px;
-    display: flex;
+export const NavbarContainer = styled.nav`
+  width: 100%;
+  display: flex;
+  background-image: url(${Logos.BackJeans});
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3em 0 3em;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 10px 0;
+    justify-content: center;
+  }
+`
+
+export const Logo = styled.div`
+  img {
+    max-width: 80%;
+  }
+`
+
+export const NavbarItems = styled.div`
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+
+  @media screen and (max-width: 768px) {
     flex-direction: row;
-    background-image: url(${Logos.BackJeans});
-    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
 `
-
-export const Slogan = styled.div`
-    margin-left: 68px;
-    img {
-    
-    }
-`
-export const Infos = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    padding: 20px;
-    margin: 10px;
-    padding-left: 270px;
-    padding-top: 70px;
-    margin-right: 90px;
-
-`
-
-export const InfoN = styled.div`
-    @font-face {
-        font-family:'d-din' ;
-        src: url('D-DIN.otf') format('open-type');
-        letter-spacing: 0em;
-        font-style: normal;
-    }
-    font-family: 'd-din';
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0em;
-    color: #FFFFFF;
-    padding: 20px;
-    margin: 10px;
-    position: relative;
-    top: 0px;
-    margin-top: 0px;
-;
-
-
-`
-
