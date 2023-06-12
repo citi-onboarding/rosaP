@@ -20,6 +20,7 @@ import Elipse_4 from './elipse_4.png'
 import Elipse_5 from './elipse_5.png'
 import SetaDireita from './seta-direita.png'
 import SetaEsquerda from './seta-esquerda.png'
+import Whatsapp from './whatsapp.png'
 
 // Acho que assets se adequa melhor ao que é a variavel
 
@@ -46,6 +47,7 @@ const Logos = {
   Carousel4: Elipse_5,
   SetaDireita: SetaDireita,
   SetaEsquerda: SetaEsquerda,
+  Whatsapp: Whatsapp,
 }
 
 export default Logos
