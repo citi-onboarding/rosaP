@@ -6,7 +6,7 @@ export const AboutSection = styled.section`
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  height: 150vh;
+  height: 160vh;
   margin-top: -300px;
   background-image: url(${BackgroundWhoWeAre});
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@ export const AboutSection = styled.section`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    height: 150vh;
+    height: 80rem;
     /* margin-top: -8em; */
   }
 `
@@ -35,7 +35,7 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   @media screen and (max-width: 768px) {
     max-width: 250px;
@@ -70,16 +70,16 @@ export const SubTitle = styled.h3`
   font-style: normal;
   font-weight: 700;
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 `
 
 export const Description = styled.p`
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `

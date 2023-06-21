@@ -1,33 +1,35 @@
-import nodemailer from "nodemailer";
-import dotenv from "dotenv";
+import nodemailer from 'nodemailer'
+import dotenv from 'dotenv'
 
-dotenv.config();
+dotenv.config()
 
 type EmailConfig = {
-    destinationUser: string;
-    subjectText: string;
-    htmlOption:string;
-};
-
-const MailServer = async ({destinationUser, subjectText, htmlOption}: EmailConfig) => {
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.EMAIL,
-            pass: process.env.PASSWORD
-        }
-    });
-
-    await transporter.sendMail({
-        from: process.env.EMAIL,
-        to: destinationUser,
-        subject: subjectText,
-        html: htmlOption
-    });
-
-
+  destinationUser: string
+  subjectText: string
+  htmlOption: string
 }
 
-export {
-    MailServer
+const MailServer = async ({
+  destinationUser,
+  subjectText,
+  htmlOption,
+}: EmailConfig) => {
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    host: 'julia.tube17@gmail.com',
+    port: 465,
+    auth: {
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
+    },
+  })
+
+  await transporter.sendMail({
+    from: process.env.EMAIL,
+    to: destinationUser,
+    subject: subjectText,
+    html: htmlOption,
+  })
 }
+
+export { MailServer }

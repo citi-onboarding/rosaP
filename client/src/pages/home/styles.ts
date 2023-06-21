@@ -13,7 +13,7 @@ export const HomeSection = styled.section`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
+    height: 600px;
     padding: 2em;
   }
 `
@@ -30,7 +30,7 @@ export const TextContainer = styled.div`
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
     max-width: none;
-    order: 2;
+    /* order: 1; */
   }
 `
 
@@ -74,6 +74,7 @@ export const ImageContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     justify-content: center;
+    display: none;
   }
 `
 
